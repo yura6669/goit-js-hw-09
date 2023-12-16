@@ -90,9 +90,15 @@ function createImageItem(image) {
 }   
 gallery.insertAdjacentHTML("beforeend", galleryItems.join(""));
 
-const closeBtn = `<img src="src/img/close-btn.svg" alt="close-button" class="close-btn">`;
-const nextBtn = `<img src="src/img/next-btn.svg" alt="next-button" class="next-btn">`;
-const prevBtn = `<img src="src/img/prev-btn.svg" alt="prev-button" class="prev-btn">`;
+const closeBtn = `<svg class="close-btn" width="14" height="14">
+<use href="../img/icons.svg#icon-close-btn"></use>
+</svg>`;
+const nextBtn = `<svg class="next-btn" width="14" height="14">
+<use href="../img/icons.svg#icon-next-btn"></use>
+</svg>`;
+const prevBtn = `<svg class="prev-btn" width="14" height="14">
+<use href="../img/icons.svg#icon-prev-btn"></use>
+</svg>`;
 
 new SimpleLightbox(".gallery a", {
     captionsData: "alt",
