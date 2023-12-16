@@ -10,10 +10,10 @@ import"./assets/modulepreload-polyfill-ec808ebb.js";/* empty css                
         </a>
     </li>
     `}n.insertAdjacentHTML("beforeend",s.join(""));const r=`<svg class="close-btn" width="14" height="14">
-<use href="../img/icons.svg#icon-close-btn"></use>
+<use href="/img/icons.svg#icon-close-btn"></use>
 </svg>`,l=`<svg class="next-btn" width="14" height="14">
-<use href="../img/icons.svg#icon-next-btn"></use>
+<use href="/img/icons.svg#icon-next-btn"></use>
 </svg>`,h=`<svg class="prev-btn" width="14" height="14">
-<use href="../img/icons.svg#icon-prev-btn"></use>
+<use href="/img/icons.svg#icon-prev-btn"></use>
 </svg>`;new a(".gallery a",{captionsData:"alt",captionDelay:250,captionPosition:"bottom",animationSpeed:250,animationSlide:!0,swipeClose:!0,showCounter:!0,swipeTolerance:50,className:"gallery-lightbox",widthRatio:.9,heightRatio:.9,closeText:r,navText:[h,l]});
 //# sourceMappingURL=commonHelpers.js.map
