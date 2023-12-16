@@ -9,5 +9,5 @@ import"./assets/modulepreload-polyfill-ec808ebb.js";/* empty css                
             />
         </a>
     </li>
-    `}n.insertAdjacentHTML("beforeend",s.join(""));const r='<img src="img/close-btn.svg" alt="close-button" class="close-btn">',l='<img src="img/next-btn.svg" alt="next-button" class="next-btn">',g='<img src="img/prev-btn.svg" alt="prev-button" class="prev-btn">';new e(".gallery a",{captionsData:"alt",captionDelay:250,captionPosition:"bottom",animationSpeed:250,animationSlide:!0,swipeClose:!0,showCounter:!0,swipeTolerance:50,className:"gallery-lightbox",widthRatio:.9,heightRatio:.9,closeText:r,navText:[g,l]});
+    `}n.insertAdjacentHTML("beforeend",s.join(""));const r='<img src="src/img/close-btn.svg" alt="close-button" class="close-btn">',l='<img src="src/img/next-btn.svg" alt="next-button" class="next-btn">',g='<img src="src/img/prev-btn.svg" alt="prev-button" class="prev-btn">';new e(".gallery a",{captionsData:"alt",captionDelay:250,captionPosition:"bottom",animationSpeed:250,animationSlide:!0,swipeClose:!0,showCounter:!0,swipeTolerance:50,className:"gallery-lightbox",widthRatio:.9,heightRatio:.9,closeText:r,navText:[g,l]});
 //# sourceMappingURL=commonHelpers.js.map
