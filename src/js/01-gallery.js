@@ -1,5 +1,6 @@
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
+import icons from "../img/icons.svg";
 
 const images = [
   {
@@ -91,13 +92,13 @@ function createImageItem(image) {
 gallery.insertAdjacentHTML("beforeend", galleryItems.join(""));
 
 const closeBtn = `<svg class="close-btn" width="14" height="14">
-<use href="./img/icons.svg#icon-close-btn"></use>
+<use href="${icons}#icon-close-btn"></use>
 </svg>`;
 const nextBtn = `<svg class="next-btn" width="14" height="14">
-<use href="./img/icons.svg#icon-next-btn"></use>
+<use href="${icons}#icon-next-btn"></use>
 </svg>`;
 const prevBtn = `<svg class="prev-btn" width="14" height="14">
-<use href="./img/icons.svg#icon-prev-btn"></use>
+<use href="${icons}#icon-prev-btn"></use>
 </svg>`;
 
 new SimpleLightbox(".gallery a", {
