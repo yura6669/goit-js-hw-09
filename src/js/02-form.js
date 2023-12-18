@@ -2,20 +2,20 @@ const form = document.querySelector('.feedback-form');
 const storage = localStorage.getItem('feedback-form-state');
 const parsedStorage = JSON.parse(storage);
 
-try {
-    const emailForStorage = parsedStorage.email;
-const messageForStorage = parsedStorage.message;
-    form.elements.email.value = emailForStorage;
-    form.elements.message.value = messageForStorage;
-} catch (error) {
-    console.log(error);
-}
+if (parsedStorage !== null && parsedStorage !== undefined) {
+    if (parsedStorage.email !== null && parsedStorage.email !== undefined) { 
+        form.elements.email.value = parsedStorage.email;
+    }
+    if (parsedStorage.message !== null && parsedStorage.message !== undefined) { 
+        form.elements.message.value = parsedStorage.message;
+    }
+ }
 
 form.addEventListener('input', onFormInput);
 
 function onFormInput(event) { 
-    const email = form.elements.email.value;
-    const message = form.elements.message.value;
+    const email = form.elements.email.value.trim();
+    const message = form.elements.message.value.trim();
     localStorage.setItem('feedback-form-state', JSON.stringify({ email, message }));
 }
 
@@ -26,7 +26,7 @@ function onFormSubmit(event) {
     const email = form.elements.email.value.trim();
     const message = form.elements.message.value.trim();
     if (email === '' || message === '') {
-        return alert('Всі поля повинні бути заповнені!');
+        return alert('Please fill in all the fields!');
     }
     localStorage.removeItem('feedback-form-state');
     form.reset();
